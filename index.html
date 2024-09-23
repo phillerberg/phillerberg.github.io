@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save The Date</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('placeholder-for-large-image.jpg'); /* Replace with large image URL */
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        .foreground-content {
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .foreground-image {
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .save-the-date {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .date {
+            font-size: 28px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .foreground-image {
+                width: 200px;
+            }
+            .save-the-date {
+                font-size: 28px;
+            }
+            .date {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .foreground-image {
+                width: 150px;
+            }
+            .save-the-date {
+                font-size: 24px;
+            }
+            .date {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-image"></div>
+
+    <div class="foreground-content">
+        <img src="riddarhuset-small.jpg" alt="Riddarhuset" class="foreground-image"> <!-- Replace with Riddarhuset image URL -->
+        <div class="save-the-date">Save The Date</div>
+        <div class="date">25.08.2025</div>
+    </div>
+
+</body>
+</html>
